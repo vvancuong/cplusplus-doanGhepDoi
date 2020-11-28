@@ -1,0 +1,17 @@
+n doi tuong
+dung vong for de doc n doi tuong
+1 doi tuong se co cac thong tin
+- dong 1i1 nu thu i thong tin: ho ten, gioi tinh, namsinh, thu nhap, chieu cao, can nang, suc khoe....
+- dong li2 nu thu i tieu chi: 
++ tuoi: t1 t2
++ chieu cao: c1 c2
++ cang nang: n1 n2
++ thu nhap: m1 m2
+--------
+........
+........
+=> to chuc du lieu ok
+so diem min ma co the ket noi
+
+
+
