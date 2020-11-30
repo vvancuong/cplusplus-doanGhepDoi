@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BaiToanGhepDoi.cpp" />
+    <ClCompile Include="TieuChi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />

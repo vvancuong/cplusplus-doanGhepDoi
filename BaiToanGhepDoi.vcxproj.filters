@@ -18,6 +18,9 @@
     <ClCompile Include="BaiToanGhepDoi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TieuChi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
