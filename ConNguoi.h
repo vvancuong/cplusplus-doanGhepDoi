@@ -5,11 +5,12 @@
 using namespace std;
 class ConNguoi {
   private:         
-    //thong tin
-    int age,earning,weight,height;         
-    string name,sex,address;
+    //thong tin name, sex, age, height, weight, income
+      string name, sex;
+      int age, height, weight, income;
+    
     //tieuchi: min max 
-    TieuChi tcage,tcweight;
+    TieuChi tcage, tcheight, tcweight, tcincome;
     int sumAver; //tong diem diem thap nhat can duoc
 
   public:
@@ -35,12 +36,6 @@ class ConNguoi {
         if (a.age >= this->tcage.min && a.age <= this->tcage.max) sumtemp = a.tcage.mark;
         //----weight,height,earning
         if (sumtemp >= a.sumAver) return true;
-        else return false;
-    }
-    //----
-    bool ghepdoi(ConNguoi a, ConNguoi b) {
-        if(checkghep(a,b) && checkghep(b,a))
-            return true;
         else return false;
     }
 };

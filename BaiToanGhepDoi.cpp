@@ -47,8 +47,8 @@ void tang_canh(int j) {  // Đổi mầu các cạnh trên đường mở để 
 void tim_duong_mo(int i) {  //i nu ben X:  ghep X voi Y; cách 2: BFS  sử queue de lam.
     // cac dinh ben nam 
     for (int j = 1; j <= sonam; j++)
-
-        if ((c[i][j] == 1) && (trace[j] == 0)) { //Connguoi::ghepdoi(nu[i],nam[j])==true 
+        //kiem tra xem namj co du kieu kien ghep nui, va kiem tra nui co du dieu kien ghep namj
+        if ((nu[i].checkghep(nam[j])) && (nam[j].checkghep(nu[i])) && (trace[j] == 0)) { //Connguoi::ghepdoi(nu[i],nam[j])==true 
          
             trace[j] = i;
             // neu j chua ghep => tim duoc duong mo
@@ -171,11 +171,13 @@ void test() {
 int main() {
     N = 4;
     docDulieu();
-    test();
+   //test();
     thuc_hien();
 
     for (int i = 1; i <= sonu; i++)  // Hiện các cạnh của bộ ghép cực đại
-       if (A[i] > 0) cout << i << "-" << A[i] << endl; //nu[i].ten va nam[A[i]].ten ......
+        if (A[i] > 0) {
+            cout << i << "-" << A[i] << endl;
+        } //nu[i].ten va nam[A[i]].ten ......
 
     return 0;
 
